@@ -6,6 +6,11 @@ jobs:
   automate_invite:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
       - name: Invite on label
         uses: vj-abigo/invite-on-label@v1.2
         with:
