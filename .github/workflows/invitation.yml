@@ -11,7 +11,7 @@ jobs:
         with:
           organization: GrowInCommunity
           label: Invite me to the organization
-          repo-token: ${{ secrets.INVITE_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           comment: 'Welcome to the Org.'
         env:
           INVITE_TOKEN: ${{ secrets.INVITE_TOKEN }}
